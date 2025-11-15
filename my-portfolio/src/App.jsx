@@ -192,38 +192,60 @@ export default function App() {
           <div className="projects-grid">
   {projects.map((project) => (
     <article key={project.title} className="project-card">
-      <div className="project-media">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="project-image"
-        />
-      </div>
-      <div className="project-body">
-        <h3 className="project-title">{project.title}</h3>
-        <p className="project-description">{project.description}</p>
+      {/* Whole card links to liveUrl */}
+      <a
+        href={project.liveUrl !== "#" ? project.liveUrl : undefined}
+        target={project.liveUrl && project.liveUrl !== "#" ? "_blank" : undefined}
+        rel={project.liveUrl && project.liveUrl !== "#" ? "noreferrer" : undefined}
+        className="project-card-link"
+      >
+        <div className="project-media">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="project-image"
+          />
+        </div>
+        <div className="project-body">
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-description">{project.description}</p>
 
-        <div className="project-stack">
-          {project.stack.map((tech) => (
-            <span key={tech} className="stack-pill">{tech}</span>
+          <div className="project-stack">
+            {project.stack.map((tech) => (
+              <span key={tech} className="stack-pill">
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </a>
+
+      {/* Bottom link row: code + optional explicit Live link */}
+              <div className="project-links">
+                {project.liveUrl && project.liveUrl !== "#" && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live
+                  </a>
+                )}
+                {project.codeUrl && (
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="code-tag"
+                  >
+                    {`</code>`}
+                  </a>
+                )}
+              </div>
+            </article>
           ))}
         </div>
-        <div className="project-links">
-          {project.codeUrl && (
-            <a
-              href={project.codeUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="code-tag"
-            >
-              {`</code>`}
-            </a>
-          )}
-        </div>
-      </div>
-    </article>
-  ))}
-</div>
+
 
         </section>
 
