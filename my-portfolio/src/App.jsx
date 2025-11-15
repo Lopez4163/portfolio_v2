@@ -5,7 +5,7 @@ const projects = [
     title: "Queens Tech Bros",
     description:
       "Brand + website for a small-business IT shop handling Wi-Fi, cabling, and security camera installs.",
-    image: "/projectImages/qtb-pic.png", // or .jpg / .gif
+    image: "/projectImages/qtb-pic.png",
     stack: ["NextJS", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://queenstechbros.com",
     codeUrl: "https://github.com/lopez4163",
@@ -14,10 +14,10 @@ const projects = [
     title: "José’s Motorcycle Repair",
     description:
     "Mobile-friendly website for a local motorcycle repair shop with services, photos, and quick contact links.",
-    image: "/projectImages/jm-pic.png", // or .jpg / .gif
+    image: "/projectImages/jm-pic.png", 
     stack: ["NextJS", "JavaScript", "Tailwind CSS", "Vite"],
-    liveUrl: "https://josemoto.netlify.app/", // add actual URL later
-    codeUrl: "https://github.com/datafaust/jose-moto", // or remove if private
+    liveUrl: "https://josemoto.netlify.app/", 
+    codeUrl: "https://github.com/datafaust/jose-moto", 
   },
   {
     title: "Nico's HomeLab",
@@ -32,19 +32,19 @@ const projects = [
     title: "Drone Tracker",
     description:
         "Real-time Rust telemetry dashboard using UDP to track multiple drones with EMA-smoothing and egui visualization.",
-    image: "/projectImages/dt-pic.png", // export a screenshot/GIF to this path
+    image: "/projectImages/dt-pic.png",
     stack: ["Rust", "egui / eframe", "UDP", "WASM"],
-    liveUrl: "https://lopez4163.github.io/drone_tracker/", // or GitHub Pages / build artifact if you have one
-    codeUrl: "https://github.com/Lopez4163/drone_tracker", // adjust to your actual repo
+    liveUrl: "https://lopez4163.github.io/drone_tracker/",
+    codeUrl: "https://github.com/Lopez4163/drone_tracker", 
   },
   {
     title: "Mat Kingz",
     description:
       "Jiu-Jitsu instructor booking platform with schedules, profiles, and Stripe-powered payments.",
-    image: "/projectImages/mk-pic.jpg", // add screenshot or logo here
+    image: "/projectImages/mk-pic.jpg", 
     stack: ["React", "Vite", "Javascript", "redux", "Tailwind CSS", "node", "mySQL", "Firebase", "Stripe", "AWS"],
-    liveUrl: "#", // replace once deployed
-    codeUrl: "https://github.com/datafaust/bjj-app", // adjust if repo name differs
+    liveUrl: "#", 
+    codeUrl: "https://github.com/datafaust/bjj-app", 
   },
 
 ];
@@ -76,7 +76,7 @@ export default function App() {
         <div className="nav-left">
         <div className="nav-logo-orb">
           <img
-            src="/projectImages/headShot.JPG"   // change this to your actual file name
+            src="/projectImages/headShot.JPG"   
             alt="Nicholas Lopez"
             className="nav-avatar"
           />
