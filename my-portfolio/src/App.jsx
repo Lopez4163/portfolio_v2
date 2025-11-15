@@ -13,40 +13,50 @@ const projects = [
   {
     title: "José’s Motorcycle Repair",
     description:
-    "Mobile-friendly website for a local motorcycle repair shop with services, photos, and quick contact links.",
-    image: "/projectImages/jm-pic.png", 
+      "Mobile-friendly website for a local motorcycle repair shop with services, photos, and quick contact links.",
+    image: "/projectImages/jm-pic.png",
     stack: ["NextJS", "JavaScript", "Tailwind CSS", "Vite"],
-    liveUrl: "https://josemoto.netlify.app/", 
-    codeUrl: "https://github.com/datafaust/jose-moto", 
+    liveUrl: "https://josemoto.netlify.app/",
+    codeUrl: "https://github.com/datafaust/jose-moto",
   },
   {
     title: "Nico's HomeLab",
     description:
       "Self-hosted setup with media, VPN, reverse proxy, monitoring, and multiple web services under one roof.",
     image: "/projectImages/hl-pic.png",
-    stack: ["Linux", "Ubuntu Server", "python",  "NGINX", "fail2ban"],
+    stack: ["Linux", "Ubuntu Server", "Python", "NGINX", "fail2ban"],
     liveUrl: "https://nicoshomelab.duckdns.org/",
     codeUrl: "https://github.com/Lopez4163/BuntoBox_Landing_Page.git",
   },
   {
     title: "Drone Tracker",
     description:
-        "Real-time Rust telemetry dashboard using UDP to track multiple drones with EMA-smoothing and egui visualization.",
+      "Real-time Rust telemetry dashboard using UDP to track multiple drones with EMA-smoothing and egui visualization.",
     image: "/projectImages/dt-pic.png",
     stack: ["Rust", "egui / eframe", "UDP", "WASM"],
     liveUrl: "https://lopez4163.github.io/drone_tracker/",
-    codeUrl: "https://github.com/Lopez4163/drone_tracker", 
+    codeUrl: "https://github.com/Lopez4163/drone_tracker",
   },
   {
     title: "Mat Kingz",
     description:
       "Jiu-Jitsu instructor booking platform with schedules, profiles, and Stripe-powered payments.",
     image: "/projectImages/mk-pic.jpg",
-    stack: ["React", "Vite", "Javascript", "redux", "Tailwind CSS", "node", "mySQL", "Firebase", "Stripe", "AWS"],
-    liveUrl: "#", 
-    codeUrl: "https://github.com/datafaust/bjj-app", 
+    stack: [
+      "React",
+      "Vite",
+      "Javascript",
+      "redux",
+      "Tailwind CSS",
+      "node",
+      "mySQL",
+      "Firebase",
+      "Stripe",
+      "AWS",
+    ],
+    liveUrl: "#",
+    codeUrl: "https://github.com/datafaust/bjj-app",
   },
-
 ];
 
 const skills = [
@@ -74,13 +84,13 @@ export default function App() {
       {/* NAVBAR */}
       <header className="nav">
         <div className="nav-left">
-        <div className="nav-logo-orb">
-          <img
-            src="/projectImages/headShot.JPG"   
-            alt="Nicholas Lopez"
-            className="nav-avatar"
-          />
-        </div>
+          <div className="nav-logo-orb">
+            <img
+              src="/projectImages/headShot.JPG"
+              alt="Nicholas Lopez"
+              className="nav-avatar"
+            />
+          </div>
           <div className="nav-text">
             <span className="nav-name">Nicholas Lopez</span>
             <span className="nav-sub">Developer · Infra · Networking</span>
@@ -97,31 +107,30 @@ export default function App() {
       <main className="main">
         {/* ABOUT / HERO FIRST */}
         <section id="about" className="section hero">
-          <div className="hero-left">
-            <p className="hero-tag">About</p>
-            <h1 className="hero-title">
-              I build systems that{" "}
-              <span className="hero-highlight">work.</span>
-            </h1>
-            <p className="hero-text">
-              I’m Nicholas — a developer from Queens, NY who likes building things that just
-              work. Turning scattered pieces into real, running systems is what drives me.
-            </p>
-            <p className="hero-text">
-            <p className="hero-text">
-              I follow whatever interests me and build the tools I wish existed. If I need
-              it, I build it. If I want it, I try.
-            </p>
-            </p>
-            <div className="hero-actions">
-              <a href="#projects" className="btn primary">
-                View projects
-              </a>
-              <a href="#contact" className="btn ghost">
-                Get in touch
-              </a>
-            </div>
-          </div>
+        <div className="hero-left">
+  <p className="hero-tag">About</p>
+  <h1 className="hero-title">
+    I build systems that <span className="hero-highlight">work.</span>
+  </h1>
+  <p className="hero-text">
+    I’m Nicholas — a developer from Queens, NY who likes building things that
+    just work. Turning scattered pieces into real, running systems is what
+    drives me.
+  </p>
+  <p className="hero-text">
+    I follow whatever interests me and build the tools I wish existed. If I
+    need it, I build it. If I want it, I try.
+  </p>
+  <div className="hero-actions">
+    <a href="#projects" className="btn primary">
+      View projects
+    </a>
+    <a href="#contact" className="btn ghost">
+      Get in touch
+    </a>
+  </div>
+</div>
+
           <div className="hero-right">
             <div className="hero-card">
               <p className="hero-card-label">Credentials</p>
@@ -137,7 +146,8 @@ export default function App() {
                 <div className="hero-row">
                   <dt>Currently</dt>
                   <dd>
-                    Bachelors of Technology - Computer Systems · Working at Queens Tech Bros
+                    Bachelors of Technology - Computer Systems · Working at
+                    Queens Tech Bros
                   </dd>
                 </div>
                 <div className="hero-row">
@@ -151,10 +161,12 @@ export default function App() {
               <p className="hero-card-label">Education & Certifications</p>
               <ul className="hero-bullets">
                 <li className="custom-color">
-                  BTech, Computer Systems — NYC College
-                  of Technology (CUNY), 2023 - 2026
+                  BTech, Computer Systems — NYC College of Technology (CUNY),
+                  2023 - 2026
                 </li>
-                <li className="custom-color">Full-Stack Developer Certification - FullStack Academy, 2024</li>
+                <li className="custom-color">
+                  Full-Stack Developer Certification - FullStack Academy, 2024
+                </li>
                 <li className="custom-color">AWS Cloud Practitioner</li>
               </ul>
             </div>
@@ -190,63 +202,56 @@ export default function App() {
           </div>
 
           <div className="projects-grid">
-  {projects.map((project) => (
-    <article key={project.title} className="project-card">
-      {/* Whole card links to liveUrl */}
-      <a
-        href={project.liveUrl !== "#" ? project.liveUrl : undefined}
-        target={project.liveUrl && project.liveUrl !== "#" ? "_blank" : undefined}
-        rel={project.liveUrl && project.liveUrl !== "#" ? "noreferrer" : undefined}
-        className="project-card-link"
-      >
-        <div className="project-media">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="project-image"
-          />
-        </div>
-        <div className="project-body">
-          <h3 className="project-title">{project.title}</h3>
-          <p className="project-description">{project.description}</p>
+            {projects.map((project) => (
+              <article
+                key={project.title}
+                className="project-card"
+                onClick={() => {
+                  if (project.liveUrl && project.liveUrl !== "#") {
+                    window.open(project.liveUrl, "_blank", "noreferrer");
+                  }
+                }}
+              >
+                <div className="project-media">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-image"
+                  />
+                </div>
+                <div className="project-body">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-description">
+                    {project.description}
+                  </p>
 
-          <div className="project-stack">
-            {project.stack.map((tech) => (
-              <span key={tech} className="stack-pill">
-                {tech}
-              </span>
+                  <div className="project-stack">
+                    {project.stack.map((tech) => (
+                      <span key={tech} className="stack-pill">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="project-links">
+                  {project.codeUrl && (
+                    <a
+                      href={project.codeUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="code-tag"
+                      onClick={(e) => {
+                        // prevent card click from also firing
+                        e.stopPropagation();
+                      }}
+                    >
+                      {`</code>`}
+                    </a>
+                  )}
+                </div>
+              </article>
             ))}
           </div>
-        </div>
-      </a>
-
-      {/* Bottom link row: code + optional explicit Live link */}
-              <div className="project-links">
-                {project.liveUrl && project.liveUrl !== "#" && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live
-                  </a>
-                )}
-                {project.codeUrl && (
-                  <a
-                    href={project.codeUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="code-tag"
-                  >
-                    {`</code>`}
-                  </a>
-                )}
-              </div>
-            </article>
-          ))}
-        </div>
-
-
         </section>
 
         {/* CONTACT */}
