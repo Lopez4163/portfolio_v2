@@ -32,7 +32,7 @@ const projects = [
     title: "Drone Tracker",
     description:
         "Real-time Rust telemetry dashboard using UDP to track multiple drones with EMA-smoothing and egui visualization.",
-    image: "../public/projectImages/dt-pic.png", // export a screenshot/GIF to this path
+    image: "/projectImages/dt-pic.png", // export a screenshot/GIF to this path
     stack: ["Rust", "egui / eframe", "UDP", "WASM"],
     liveUrl: "https://lopez4163.github.io/drone_tracker/", // or GitHub Pages / build artifact if you have one
     codeUrl: "https://github.com/Lopez4163/drone_tracker", // adjust to your actual repo
@@ -41,7 +41,7 @@ const projects = [
     title: "Mat Kingz",
     description:
       "Jiu-Jitsu instructor booking platform with schedules, profiles, and Stripe-powered payments.",
-    image: "../public/projectImages/mk-pic.jpg", // add screenshot or logo here
+    image: "/projectImages/mk-pic.jpg", // add screenshot or logo here
     stack: ["React", "Vite", "Javascript", "redux", "Tailwind CSS", "node", "mySQL", "Firebase", "Stripe", "AWS"],
     liveUrl: "#", // replace once deployed
     codeUrl: "https://github.com/datafaust/bjj-app", // adjust if repo name differs
