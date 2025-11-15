@@ -1,7 +1,7 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="256" height="256" rx="60" fill="#0F172A"></rect>
-  <rect x="18" y="18" width="220" height="220" rx="50" stroke="#38BDF8" stroke-width="8"></rect>
-  <text x="50%" y="55%" text-anchor="middle" fill="#22C55E" font-size="110" font-family="Arial Black, sans-serif" dy=".35em">
-    NL
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="48" fill="#05060B"></rect>
+  <rect x="16" y="16" width="224" height="224" rx="40" stroke="#A855F7" stroke-width="8" fill="none"></rect>
+  <text x="50%" y="58%" text-anchor="middle" font-size="120" font-family="Arial Black" dy=".35em">
+    <tspan fill="#A855F7">N</tspan><tspan fill="#FBBF24">L</tspan>
   </text>
 </svg>
