@@ -41,7 +41,7 @@ const projects = [
     title: "Mat Kingz",
     description:
       "Jiu-Jitsu instructor booking platform with schedules, profiles, and Stripe-powered payments.",
-    image: "/projectImages/mk-pic.jpg", 
+    image: "/projectImages/mk-pic.jpg",
     stack: ["React", "Vite", "Javascript", "redux", "Tailwind CSS", "node", "mySQL", "Firebase", "Stripe", "AWS"],
     liveUrl: "#", 
     codeUrl: "https://github.com/datafaust/bjj-app", 
