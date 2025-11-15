@@ -122,7 +122,6 @@ export default function App() {
               </a>
             </div>
           </div>
-
           <div className="hero-right">
             <div className="hero-card">
               <p className="hero-card-label">Credentials</p>
