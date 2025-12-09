@@ -2,6 +2,23 @@ import React from "react";
 
 const projects = [
   {
+    title:"Real Estate Market Tracker",
+    description:
+      "A full-stack web app that tracks real estate market trends using public APIs, with data visualization and user authentication.",
+    image: "/projectImages/re-pic.png",
+    stack: [
+      "NextJS",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Node.js",
+      "Prisma",
+    ],
+    liveUrl: "https://house-market-tracker.vercel.app/",
+    codeUrl: "https://github.com/Lopez4163/house_market_tracker/security",
+
+  },
+  {
     title: "Queens Tech Bros",
     description:
       "Brand + website for a small-business IT shop handling Wi-Fi, cabling, and security camera installs.",
@@ -93,7 +110,7 @@ export default function App() {
           </div>
           <div className="nav-text">
             <span className="nav-name">Nicholas Lopez</span>
-            <span className="nav-sub">Developer · Infra · Networking</span>
+            <span className="nav-sub">Developer · Infra · DevOps · Networking</span>
           </div>
         </div>
         <nav className="nav-links">
@@ -108,28 +125,27 @@ export default function App() {
         {/* ABOUT / HERO FIRST */}
         <section id="about" className="section hero">
         <div className="hero-left">
-  <p className="hero-tag">About</p>
-  <h1 className="hero-title">
-    I build systems that <span className="hero-highlight">work.</span>
-  </h1>
-  <p className="hero-text">
-    I’m Nicholas — a developer from Queens, NY who likes building things that
-    just work. Turning scattered pieces into real, running systems is what
-    drives me.
-  </p>
-  <p className="hero-text">
-    I follow whatever interests me and build the tools I wish existed. If I
-    need it, I build it. If I want it, I try.
-  </p>
-  <div className="hero-actions">
-    <a href="#projects" className="btn primary">
-      View projects
-    </a>
-    <a href="#contact" className="btn ghost">
-      Get in touch
-    </a>
-  </div>
-</div>
+          <p className="hero-tag">About</p>
+        <h1 className="hero-title">
+          Building systems that have <span className="hero-highlight">purpose.</span>
+        </h1>
+        <p className="hero-text">
+        I’m Nicholas — a developer from Queens, NY who loves turning scattered ideas into working systems. 
+        I enjoy building things from the ground up, piecing the puzzle together, and learning something new at every step.
+        </p>
+        <p className="hero-text">
+          I follow whatever interests me and build the tools I wish existed. If I
+          need it, I build it. If I want it, I try.
+        </p>
+        <div className="hero-actions">
+          <a href="#projects" className="btn primary">
+            View projects
+          </a>
+          <a href="#contact" className="btn ghost">
+            Get in touch
+          </a>
+        </div>
+      </div>
 
           <div className="hero-right">
             <div className="hero-card">
@@ -141,13 +157,12 @@ export default function App() {
                 </div>
                 <div className="hero-row">
                   <dt>Focus</dt>
-                  <dd>Full-stack · Infrastructure · Networking</dd>
+                  <dd>Full-stack · Infrastructure · DevOps · Networking</dd>
                 </div>
                 <div className="hero-row">
                   <dt>Currently</dt>
                   <dd>
-                    Bachelors of Technology - Computer Systems · Working at
-                    Queens Tech Bros
+                     Developer @Queens Tech Bros
                   </dd>
                 </div>
                 <div className="hero-row">
@@ -161,7 +176,7 @@ export default function App() {
               <p className="hero-card-label">Education & Certifications</p>
               <ul className="hero-bullets">
                 <li className="custom-color">
-                  BTech, Computer Systems — NYC College of Technology (CUNY),
+                  Bachelors in Computer Systems at NYC College of Technology,
                   2023 - 2026
                 </li>
                 <li className="custom-color">
