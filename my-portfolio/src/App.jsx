@@ -14,7 +14,7 @@ const projects = [
       "Node.js",
       "Prisma",
     ],
-    liveUrl: "https://house-market-tracker.vercel.app/",
+    liveUrl: "https://homesnearyou.vercel.app/",
     codeUrl: "https://github.com/Lopez4163/house_market_tracker/security",
 
   },
