@@ -296,24 +296,6 @@ export default function App() {
                 Systems degree at NYC College of Technology.
               </p>
             </div>
-            <div className="summary-facts">
-              <div>
-                <span>Current</span>
-                <strong>Software Engineer @ Gesture</strong>
-              </div>
-              <div>
-                <span>Education</span>
-                <strong>Computer Systems, NYCCT</strong>
-              </div>
-              <div>
-                <span>Certification</span>
-                <strong>AWS Cloud Practitioner</strong>
-              </div>
-              <div>
-                <span>Background</span>
-                <strong>U.S. Marine Corps veteran</strong>
-              </div>
-            </div>
           </div>
         </section>
 

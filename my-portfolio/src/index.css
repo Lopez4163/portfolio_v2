@@ -367,10 +367,7 @@ h2 {
 .summary-grid {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  gap: clamp(24px, 5vw, 70px);
-  align-items: start;
+  display: block;
   padding-left: clamp(0px, 4vw, 46px);
 }
 
@@ -380,42 +377,11 @@ h2 {
 }
 
 .summary-copy p {
-  max-width: 840px;
+  max-width: 980px;
   margin: 0;
   color: var(--ink-soft);
   font-size: clamp(1.05rem, 1.7vw, 1.45rem);
   line-height: 1.65;
-}
-
-.summary-facts {
-  display: grid;
-  border-top: 1px solid var(--ink);
-  border-left: 1px solid var(--ink);
-  background: var(--cream);
-  box-shadow: 10px 10px 0 var(--accent-hot);
-}
-
-.summary-facts div {
-  display: grid;
-  gap: 8px;
-  min-height: 112px;
-  padding: 20px;
-  border-right: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-}
-
-.summary-facts span {
-  color: var(--accent);
-  font-size: 0.76rem;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.summary-facts strong {
-  color: var(--ink);
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  line-height: 1.25;
 }
 
 .skills-grid {
@@ -807,7 +773,6 @@ h2 {
   }
 
   .summary-grid {
-    grid-template-columns: 1fr;
     padding-left: 0;
   }
 
