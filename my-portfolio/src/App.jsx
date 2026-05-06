@@ -2,6 +2,23 @@ import React from "react";
 
 const projects = [
   {
+    title: "NotiVenta",
+    description:
+      "SaaS dashboard for Mercado Libre sellers with Telegram sale alerts, inventory-risk tracking, order visibility, and shipping label workflows.",
+    image: "/projectImages/ml-img.png",
+    stack: [
+      "NextJS",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Prisma",
+      "Telegram Bot API",
+      "Stripe",
+    ],
+    liveUrl: "https://mercado-libre-app-git-portfolio-live-lopez4163s-projects.vercel.app/",
+    codeUrl: "https://github.com/Lopez4163/MercadoLibre_app",
+  },
+  {
     title:"Real Estate Market Tracker",
     description:
       "A full-stack web app that tracks real estate market trends using public APIs, with data visualization and user authentication.",
