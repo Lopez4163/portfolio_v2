@@ -32,7 +32,7 @@ const projects = [
       "PostgreSQL",
       "Vercel",
     ],
-    liveUrl: "#",
+    liveUrl: "https://file-picker-swart.vercel.app/",
     codeUrl: "https://github.com/Lopez4163/file-picker",
   },
   {
