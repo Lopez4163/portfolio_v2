@@ -19,7 +19,24 @@ const projects = [
     codeUrl: "https://github.com/Lopez4163/MercadoLibre_app",
   },
   {
-    title:"Real Estate Market Tracker",
+    title: "File Scrubber",
+    description:
+      "AI-assisted file and folder review workspace that understands document contents, recommends clearer names, and creates reviewed renamed copies without modifying the originals.",
+    image: "/projectImages/file-picker.png",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "LangGraph",
+      "OpenRouter",
+      "PostgreSQL",
+      "Vercel",
+    ],
+    liveUrl: "#",
+    codeUrl: "https://github.com/Lopez4163/file-picker",
+  },
+  {
+    title: "Real Estate Market Tracker",
     description:
       "A full-stack web app that tracks real estate market trends using public APIs, with data visualization and user authentication.",
     image: "/projectImages/re-pic.png",
